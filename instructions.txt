@@ -1,0 +1,76 @@
+1) Name: Young Sang Kwon
+
+2) Brief Explanation of the Assignment:
+   Implement DFS to find the best path and compare its performance with the provided A* algorithm.
+
+3) How to Run:
+   You can see the comparison results by running python in the directory where "best_path.py" is located.
+
+4) Results:
+A* Paths with Goals:
+Goal 1:
+1 1 1 1 3 3 3 3 3    
+2 # # 1 # . . . 3    
+2 . . 1 1 . # . 3    
+2 # # # # . # . 3    
+2 2 2 2 2 . # . 3    
+. . . . . . # . 3    
+. . . . . . . . 3    
+Path Length: 6       
+Explored Cells: 11   
+
+Goal 2:
+1 1 1 1 3 3 3 3 3    
+2 # # 1 # . . . 3    
+2 . . 1 1 . # . 3    
+2 # # # # . # . 3    
+2 2 2 2 2 . # . 3    
+. . . . . . # . 3    
+. . . . . . . . 3    
+Path Length: 8       
+Explored Cells: 17   
+
+Goal 3:
+1 1 1 1 3 3 3 3 3    
+2 # # 1 # . . . 3    
+2 . . 1 1 . # . 3    
+2 # # # # . # . 3    
+2 2 2 2 2 . # . 3    
+. . . . . . # . 3 
+. . . . . . . . 3 
+Path Length: 14
+Explored Cells: 51
+
+dfs Paths with Goals:
+Goal 1:
+1 . . 1 1 1 3 3 3 
+1 # # 1 # 1 3 3 3 
+1 . . 1 1 1 # . 3 
+1 # # # # 1 # . 3
+1 1 1 1 1 1 # . 3
+1 1 1 1 1 1 # . 3
+1 1 1 1 1 1 . . 3
+Path Length: 30
+Explored Cells: 33
+
+Goal 2:
+1 . . 1 1 1 3 3 3
+1 # # 1 # 1 3 3 3
+1 . . 1 1 1 # . 3
+1 # # # # 1 # . 3
+1 1 1 1 1 1 # . 3
+1 1 1 1 1 1 # . 3
+1 1 1 1 1 1 . . 3
+Path Length: 16
+Explored Cells: 17
+
+Goal 3:
+1 . . 1 1 1 3 3 3
+1 # # 1 # 1 3 3 3
+1 . . 1 1 1 # . 3
+1 # # # # 1 # . 3
+1 1 1 1 1 1 # . 3
+1 1 1 1 1 1 # . 3
+1 1 1 1 1 1 . . 3
+Path Length: 36
+Explored Cells: 46
